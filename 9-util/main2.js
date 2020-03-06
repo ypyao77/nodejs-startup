@@ -1,3 +1,5 @@
+// Sub 仅仅继承了Base 在原型中定义的函数，
+// 而构造函数内部创造的 base 属性和 sayHello 函数都没有被 Sub 继承
 var util = require('util'); 
 
 function Base() { 
