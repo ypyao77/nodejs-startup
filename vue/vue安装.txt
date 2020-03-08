@@ -1,0 +1,21 @@
+【安装和使用element ui】
+1. 安装npm-vue
+            npm install -g vue
+            npm install -g vue-clie
+
+2. 升级 vue-cli 到3.0
+            npm uninstall -g vue-cli
+            npm install -g @vue/cli
+
+3. 创建一个element ui应用程序
+            vue create <my-app>
+            cd <my-app>
+            vue add element
+
+
+
+
+
+
+
+
