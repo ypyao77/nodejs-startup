@@ -2,18 +2,25 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
+import Dashboard from '@/components/Dashboard'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    redirect:'/home'
+    name: 'Home',
+    component: Home
   },
   {
     path: '/home',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/dashboard',
+    name: 'Dashboard',
+    component: Dashboard
   },
   {
     path: '/about',
