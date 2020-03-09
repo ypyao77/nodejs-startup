@@ -33,6 +33,24 @@
                     <span>菜单3</span>
                 </el-menu-item>
             </el-submenu>
+
+            <el-menu-item index="/form">
+                <i class="el-icon-location"></i>
+                <span slot="title">Form</span>
+            </el-menu-item>
+            <el-menu-item index="/table">
+                <i class="el-icon-location"></i>
+                <span slot="title">Table</span>
+            </el-menu-item>
+            <el-menu-item index="/dialog">
+                <i class="el-icon-location"></i>
+                <span slot="title">Dialog</span>
+            </el-menu-item>
+
+            <el-menu-item index="/i-cannot-find-this-page">
+                <i class="el-icon-location"></i>
+                <span slot="title">无效页面</span>
+            </el-menu-item>
         </el-menu>
         </div>
         <div id="main">
@@ -50,7 +68,8 @@
 
 <style>
     #app {
-        font-family: 'Avenir', Helvetica, Arial, sans-serif;
+        /* font-family: 'Avenir', Helvetica, Arial, sans-serif; */
+        font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial,sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
@@ -90,7 +109,7 @@
     #footer {
         position: absolute;
         bottom: 0px;
-        left: 230px;
+        left: 0px;
         right: 0px;
         text-align: center;
         height: 30px;
