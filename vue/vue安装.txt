@@ -16,8 +16,3 @@
             vue add router    # 等效于 npm install vue-router --save
 
 
-
-
-
-
-
