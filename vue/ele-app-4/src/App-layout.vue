@@ -1,5 +1,4 @@
 <template>
-  <div class="homeBox">
     <el-container style="height:100%;" direction="vertical">
       <!-- 顶栏 -->
       <el-header height="60px">
@@ -25,7 +24,6 @@
       <!-- 底栏 -->
       <el-footer height="30px">&copy;究极死胖兽 2019</el-footer>
     </el-container>
-  </div>
 </template>
 
 <script>

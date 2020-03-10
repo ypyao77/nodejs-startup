@@ -54,7 +54,7 @@
         </el-menu>
         </div>
         <div id="main">
-            <router-view/>
+            <router-view />
         </div>
         <div id="footer" />
     </div>
