@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
+// import Login from '../views/Login.vue'
 import Dashboard from '../views/Dashboard.vue'
 import Menu1 from '../views/Menu1.vue'
 import Menu2 from '../views/Menu2.vue'
@@ -28,6 +29,13 @@ const routes = [
     path: '/about',
     name: 'About',
     component: About
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    hidden: true,
+    component: () => import('@/views/Login'),
+    // component: Login
   },
   {
     path: '/dashboard',
