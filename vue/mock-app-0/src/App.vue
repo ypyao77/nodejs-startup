@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <el-button @click.native="handleUserList">user-list</el-button>
+    <el-button @click.native="handleUser">user</el-button>
     <p>姓名： {{dlgName}}       年龄： {{dlgSex}}</p>
 
     <router-view />
@@ -14,7 +15,6 @@
   export default {
     data() {
       return {
-        outerVisible: false,
         dlgName: '',
         dlgSex: 0
       };
@@ -28,6 +28,17 @@
 
             this.dlgName = dlgList[1]["username"]
             this.dlgSex = dlgList[1]["sex"]
+          }
+        })
+      },
+      handleUser() {
+        axios.get("/api/user").then(response => {
+          if (response.data) {
+            console.log(response.data)
+            let dlgList = response.data["list"]
+
+            this.dlgName = dlgList[0]["username"]
+            this.dlgSex = dlgList[0]["sex"]
           }
         })
       }
