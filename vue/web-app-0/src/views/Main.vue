@@ -4,7 +4,7 @@
     <el-button type="primary" @click="handleSubmitLogout">/logout</el-button>
     <el-button type="primary" @click="handleSubmit2">/main/foo</el-button>
 
-    <el-tooltip content="打开新按钮" placement="bottom">
+    <el-tooltip content="打开新按钮" placement="right">
       <el-button type="primary" @click="outerVisible = true">点击打开外层 Dialog</el-button>
     </el-tooltip>
 

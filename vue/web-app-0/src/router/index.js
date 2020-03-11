@@ -9,17 +9,20 @@ const routes = [
     path: '/',
     name: 'Login',
     hidden: true,
+    meta: { title: '登录', icon: 'table' },
     component: () => import('@/views/Login.vue')
   },
   {
     path: '/login',
     name: 'Login',
     hidden: true,
+    meta: { title: '登录', icon: 'table' },
     component: () => import('@/views/Login.vue')
   },
   {
     path: '*',
     hidden: true,
+    meta: { title: '错误' },
     component: () => import('@/views/404.vue')
   },
   {

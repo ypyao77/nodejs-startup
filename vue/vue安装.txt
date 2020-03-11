@@ -25,3 +25,5 @@
             yarn # or npm install
             yarn run dev # or npm run dev
 
+6. 使用mock
+            npm install mockjs
