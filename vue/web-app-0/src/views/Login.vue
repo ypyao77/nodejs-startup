@@ -1,9 +1,19 @@
 <template>
   <div class="login">
     <h1>This is an LOGIN page</h1>
+    <div>
+      <el-link type="primary">主要链接</el-link>
+      <el-divider direction="vertical"></el-divider>
+      <el-link type="primary">主要链接</el-link>
+      <el-divider direction="vertical"></el-divider>
+      <el-link type="primary">主要链接</el-link>
+    </div>
     <el-button type="primary" @click.native="handleSubmit">/main</el-button>
     <el-button type="primary" @click.native="handleSubmit2">/main/foo</el-button>
-    <el-button type="primary" icon="el-icon-edit" circle></el-button>
+
+    <el-tooltip content="编辑" placement="right">
+      <el-button type="primary" icon="el-icon-edit" circle></el-button>
+    </el-tooltip>
   </div>
 </template>
 
