@@ -1,8 +1,9 @@
 <template>
   <div class="login">
     <h1>This is an LOGIN page</h1>
-    <el-button @click.native="handleSubmit" type="primary">/main</el-button>
-    <el-button @click.native="handleSubmit2" type="primary">/main/foo</el-button>
+    <el-button type="primary" @click.native="handleSubmit">/main</el-button>
+    <el-button type="primary" @click.native="handleSubmit2">/main/foo</el-button>
+    <el-button type="primary" icon="el-icon-edit" circle></el-button>
   </div>
 </template>
 
