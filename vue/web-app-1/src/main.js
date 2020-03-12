@@ -2,8 +2,11 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 
-import App from './App-vertical'
-//import App from './App-horizontal'
+// import App from './App-vertical'
+// import App from './App-horizontal'
+import App from './App-tab'
+// import App from './App-tab2'
+
 import router from './router'
 import './plugins/element.js'
 
