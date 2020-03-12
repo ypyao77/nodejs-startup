@@ -20,7 +20,6 @@ module.exports = {
    * 配置完毕之后变为xxxxx/?page=1&len=10
    */
   queryMap: [
-    ['_page', 'page'],
-    ['_limit', 'len']
+    ['_page', 'page'], ['_limit', 'len']
   ]
 }
