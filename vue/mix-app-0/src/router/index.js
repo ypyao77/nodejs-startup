@@ -6,7 +6,13 @@ Vue.use(VueRouter)
 const routes = [
   {
     path:'*', 
-    redirect: '/views/button'
+    hidden: true,
+    component: () => import('../views/404')
+  },
+  {
+    path: '/',
+    name: 'Button',
+    component: () => import('../views/Button')
   },
   {
     path: '/views/button',
