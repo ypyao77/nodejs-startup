@@ -5,49 +5,48 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
+    path:'*', 
+    redirect: '/views/button'
+  },
+  {
+    path: '/views/button',
     name: 'Button',
     component: () => import('../views/Button')
   },
   {
-    path: '/button',
-    name: 'Button',
-    component: () => import('../views/Button')
-  },
-  {
-    path: '/badge',
+    path: '/views/badge',
     name: 'Badge',
     component: () => import('../views/Badge')
   },
   {
-    path: '/navmenu',
+    path: '/views/navmenu',
     name: 'NavMenu',
     component: () => import('../views/NavMenu')
   },
   {
-    path: '/edit',
+    path: '/views/edit',
     name: 'Edit',
     component: () => import('../views/Edit')
   },
   {
-    path: '/scroll',
+    path: '/views/scroll',
     name: 'Scroll',
     component: () => import('../views/Scroll')
   },
   {
-    path: '/msg',
+    path: '/views/msg',
     name: 'Msg',
     component: () => import('../views/Msg')
   },
   {
-    path: '/cascader',
+    path: '/views/cascader',
     name: 'Cascader',
     component: () => import('../views/Cascader')
   }
 ]
 
 const router = new VueRouter({
-  mode: 'history',
+  // mode: 'history',
   base: process.env.BASE_URL,
   routes
 })
