@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <img src="@/assets/logo.png">
+    <img src="./assets/logo.png">
     <div>
+      <p> process.env.BASE_URL: {{ burl }} </p>
+      <p> process.env.VUE_APP_BASE_URL: {{ vburl }} </p>
       <br>
       <br>
 
@@ -25,8 +27,13 @@
 <script>
 export default {
   name: 'app',
+  data() {
+    return {
+      burl: process.env.BASE_URL,
+      vburl: process.env.VUE_APP_BASE_URL
+    }
+  },
   components: {
-    
   }
 }
 </script>

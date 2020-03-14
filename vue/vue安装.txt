@@ -1,5 +1,6 @@
 【安装和使用element ui】
 1. 安装npm-vue
+            npm install -g cnpm --registry=https://registry.npm.taobao.org
             npm install -g vue
             npm install -g vue-cli
 
@@ -41,5 +42,13 @@
 8. 使用json-server-router
     注意： windows上似乎有bug，请在linux上使用
 
+9. 使用webpack创建项目
+                vue init webpack <webpack-app> 或 vue init webpack <webpack-app> --registry=https://registry.npm.taobao.org
+                cd <webpack-app>
+                vue add router
+                vue add element
+                vue add vuex
+                vue add axios
+        
 
 

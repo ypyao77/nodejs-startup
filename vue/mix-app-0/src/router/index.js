@@ -7,42 +7,42 @@ const routes = [
   {
     path: '/',
     name: 'Button',
-    component: () => import('@/views/Button')
+    component: () => import('../views/Button')
   },
   {
     path: '/button',
     name: 'Button',
-    component: () => import('@/views/Button')
+    component: () => import('../views/Button')
   },
   {
     path: '/badge',
     name: 'Badge',
-    component: () => import('@/views/Badge')
+    component: () => import('../views/Badge')
   },
   {
     path: '/navmenu',
     name: 'NavMenu',
-    component: () => import('@/views/NavMenu')
+    component: () => import('../views/NavMenu')
   },
   {
     path: '/edit',
     name: 'Edit',
-    component: () => import('@/views/Edit')
+    component: () => import('../views/Edit')
   },
   {
     path: '/scroll',
     name: 'Scroll',
-    component: () => import('@/views/Scroll')
+    component: () => import('../views/Scroll')
   },
   {
     path: '/msg',
     name: 'Msg',
-    component: () => import('@/views/Msg')
+    component: () => import('../views/Msg')
   },
   {
     path: '/cascader',
     name: 'Cascader',
-    component: () => import('@/views/Cascader')
+    component: () => import('../views/Cascader')
   }
 ]
 
