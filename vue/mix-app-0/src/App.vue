@@ -12,13 +12,8 @@
       <router-link :to="{ path: '/views/edit' }">编辑器</router-link> || 
       <router-link :to="{ path: '/views/msg' }">消息提示</router-link> || 
       <router-link :to="{ path: '/views/scroll' }">滚动显示</router-link> || 
-      <!-- <el-link href="/views/button" type="primary"> 按钮 </el-link> ||
-      <el-link href="/views/badge" type="primary"> 标记 </el-link> ||
-      <el-link href="/views/navmenu" type="primary"> 导航菜单 </el-link> ||
-      <el-link href="/views/cascader" type="primary"> 选择器 </el-link> ||
-      <el-link href="/views/edit" type="primary"> 编辑器 </el-link> ||
-      <el-link href="/views/msg" type="primary"> 消息提示 </el-link> ||
-      <el-link href="/views/scroll" type="primary"> 滚动显示 </el-link> || -->
+      <router-link :to="{ path: '/views/dialog' }">对话框</router-link> || 
+      <router-link :to="{ path: '/views/layout' }">layout布局</router-link> || 
     </el-row>
 
     <el-row><p/></el-row>

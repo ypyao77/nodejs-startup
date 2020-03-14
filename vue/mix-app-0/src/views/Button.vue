@@ -2,6 +2,7 @@
   <div class="button">
     <el-row>
       <el-button @click="onClick" :loading="showLoading">加载按钮</el-button>
+      <el-button @click="openFullScreen1" v-loading.fullscreen.lock="fullscreenLoading">指令方式</el-button>
       <el-button @click="openFullScreen2">服务方式</el-button>
     </el-row>
     <el-row><p/></el-row>
@@ -22,7 +23,7 @@
       <el-button type="warning" plain>警告按钮</el-button>
       <el-button type="danger" plain>危险按钮</el-button>
     </el-row>
-
+    <el-row><p/></el-row>
     <el-row>
       <el-switch v-model="value" active-color="#13ce66" inactive-color="#ff4949"></el-switch>
     </el-row>
@@ -76,6 +77,7 @@ export default {
     return {
       showLoading: false,
       value: false,
+      fullscreenLoading: false,
       items: [
         { type: '', label: '标签一' },
         { type: 'success', label: '标签二' },
@@ -92,6 +94,12 @@ export default {
       setTimeout(function() {
         _this.showLoading = false
       }, 2000)
+    },
+    openFullScreen1() {
+      this.fullscreenLoading = true;
+      setTimeout(() => {
+        this.fullscreenLoading = false;
+      }, 2000);
     },
     openFullScreen2() {
         const loading = this.$loading({

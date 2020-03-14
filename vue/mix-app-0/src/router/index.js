@@ -25,6 +25,16 @@ const routes = [
     component: () => import('../views/Badge')
   },
   {
+    path: '/views/dialog',
+    name: 'Dialog',
+    component: () => import('../views/Dialog')
+  },
+  {
+    path: '/views/layout',
+    name: 'Layout',
+    component: () => import('../views/Layout')
+  },
+  {
     path: '/views/navmenu',
     name: 'NavMenu',
     component: () => import('../views/NavMenu')
