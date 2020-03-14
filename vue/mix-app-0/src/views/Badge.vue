@@ -1,7 +1,5 @@
 <template>
   <div class="badge">
-    <el-row><p/></el-row>
-    <el-row><p/></el-row>
     <el-row>
       <el-badge :value="12" class="item">
           <el-button size="small">评论</el-button>
