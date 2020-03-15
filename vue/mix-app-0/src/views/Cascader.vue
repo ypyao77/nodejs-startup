@@ -225,7 +225,8 @@ export default {
     },
     methods: {
       handleChange(value) {
-        console.log(value);
+        this.value = value
+        // console.log(value);
       }
     }
   };

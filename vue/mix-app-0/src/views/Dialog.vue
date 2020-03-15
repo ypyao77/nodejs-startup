@@ -71,12 +71,12 @@
         this.$confirm('确认关闭？')
           .then(response => {
             this.response = response
-            console.log(this.response)
+            // console.log(this.response)
             done();
           })
           .catch(error => {
             this.error = error
-            console.log(this.error)
+            // console.log(this.error)
           });
       }
     }

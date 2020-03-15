@@ -116,7 +116,8 @@
     },
     methods: {
       handleSelect(key, keyPath) {
-        console.log(key, keyPath);
+        this.key, this.keyPath = key, keyPath
+        // console.log(key, keyPath);
       },
       handleCommand(command) {
         this.$message('click on item ' + command);

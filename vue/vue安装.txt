@@ -70,15 +70,7 @@
                         ···
                     }
 
-3. 修改配置 build/webpack.dev.conf.js 中的 historyApiFallback
-                    const common = require('./webpack.common')
-                    module.exports = merge(common, {
-                        devServer: {
-                            historyApiFallback: true
-                        }
-                    }
-
-4. 修改nginx配置 nginx.conf ???
+3. 修改nginx配置 nginx.conf ???
                     location / {
                         index  /dist/index.html;
                     }
