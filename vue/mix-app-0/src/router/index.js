@@ -68,8 +68,8 @@ function getAbsolutePath () {
 
 const router = new VueRouter({
   mode: 'history',
-  // base: process.env.BASE_URL,
-  base: getAbsolutePath(),
+  base: process.env.BASE_URL,
+  // base: getAbsolutePath(),
   routes
 })
 

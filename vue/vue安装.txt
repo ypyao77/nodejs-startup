@@ -45,12 +45,12 @@
 9. 使用webpack创建项目
                 vue init webpack <webpack-app>
                 cd <webpack-app>
-                vue add router
+                # vue add router
                 vue add element
                 vue add vuex
                 vue add axios
 
-10. 编译webpack报错, 注释掉这行代码
+10. 编译webpack报错, 注释掉文件 webpack.base.conf.js 这行代码
                 module: {
                     rules: [
                         // ...(config.dev.useEslint ? [createLintingRule()] : []),
