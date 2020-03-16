@@ -21,7 +21,10 @@
     <el-row><p/></el-row>
     <el-row><p/></el-row>
 
-    <router-view />
+    <keep-alive>
+      <router-view />
+    </keep-alive>
+
   </div>
 </template>
 

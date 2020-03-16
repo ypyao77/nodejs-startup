@@ -1,5 +1,5 @@
 <template>
-  <div class="scroll">
+  <div class="vcharts">
     <el-card class="box-card">
       <ve-pie :data="chartData1"></ve-pie>
     </el-card>
