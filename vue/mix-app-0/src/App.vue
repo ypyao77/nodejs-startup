@@ -14,6 +14,8 @@
       <router-link :to="{ path: '/views/scroll' }">滚动显示</router-link> || 
       <router-link :to="{ path: '/views/dialog' }">对话框</router-link> || 
       <router-link :to="{ path: '/views/layout' }">layout布局</router-link> || 
+      <router-link :to="{ path: '/views/vcharts' }">V图表</router-link> || 
+      <router-link :to="{ path: '/views/echarts' }">E图表</router-link> || 
     </el-row>
 
     <el-row><p/></el-row>

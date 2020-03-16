@@ -50,6 +50,16 @@ const routes = [
     component: () => import('../views/Scroll')
   },
   {
+    path: '/views/echarts',
+    name: 'ECharts',
+    component: () => import('../views/ECharts')
+  },
+  {
+    path: '/views/vcharts',
+    name: 'VCharts',
+    component: () => import('../views/VCharts')
+  },
+  {
     path: '/views/msg',
     name: 'Msg',
     component: () => import('../views/Msg')
@@ -61,10 +71,10 @@ const routes = [
   }
 ]
 
-function getAbsolutePath () {
-  let path = location.pathname
-  return path.substring(0, path.lastIndexOf('/') + 1)
-}
+// function getAbsolutePath () {
+//   let path = location.pathname
+//   return path.substring(0, path.lastIndexOf('/') + 1)
+// }
 
 const router = new VueRouter({
   mode: 'history',
