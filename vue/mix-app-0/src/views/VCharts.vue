@@ -1,11 +1,38 @@
 <template>
   <div class="vcharts">
-    <el-card class="box-card">
-      <ve-pie :data="chartData1"></ve-pie>
-    </el-card>
+    <col-row>
+      <el-col :span="8" :offset="7">
+        <div class="grid-content bg-purple">
+          <el-card class="box-card">
+            <ve-pie :data="chartData1"></ve-pie>
+          </el-card>
+        </div>
+      </el-col>
+    </col-row>
 
-    <ve-pie :data="chartData1"></ve-pie>
-    <ve-line :data="chartData2"></ve-line>
+    <col-row><p><br></p></col-row>
+    <col-row><p><br></p></col-row>
+    <col-row><p><br></p></col-row>
+    <col-row><p><br></p></col-row>
+    <col-row><p><br></p></col-row>
+    <col-row><p><br></p></col-row>
+    <col-row><p><br></p></col-row>
+    <col-row><p><br></p></col-row>
+    <col-row><p><br></p></col-row>
+    <col-row><p><br></p></col-row>
+    <col-row><p><br></p></col-row>
+    <col-row><p><br></p></col-row>
+    <col-row><p><br></p></col-row>
+    <col-row><p><br></p></col-row>
+    <col-row><p><br></p></col-row>
+
+    <col-row>
+      <ve-pie :data="chartData1"></ve-pie>
+    </col-row>
+
+    <col-row>
+      <ve-line :data="chartData2"></ve-line>
+    </col-row>
   </div>
 </template>
 
@@ -60,7 +87,6 @@
   }
 
   .box-card {
-    left: 400px;
-    width: 1200px;
+    width: 800px;
   }
 </style>
