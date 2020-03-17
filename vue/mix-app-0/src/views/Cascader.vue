@@ -1,22 +1,53 @@
 <template>
   <div class="cascader">
-    <div class="block">
-      <span class="demonstration">默认 click 触发子菜单</span>
-      <el-cascader
-        v-model="value"
-        :options="options"
-        @change="handleChange"></el-cascader>
-    </div>
-    
-    <br><br>
+    <el-row>
+      <el-col :span="4">
+        <div><p/></div>
+      </el-col>
+      <el-col :span="6">
+        <div class="block">
+          <span class="demonstration">默认 click 触发子菜单</span>
+          <el-cascader
+            v-model="value"
+            :options="options"
+            @change="handleChange"></el-cascader>
+        </div>
+      </el-col>
+
+      <el-col :span="6">
+        <div class="block">
+          <el-cascader
+            v-model="value"
+            :options="options"
+            :props="{ expandTrigger: 'hover' }"
+            @change="handleChange"></el-cascader>
+          <span class="demonstration">hover 触发子菜单</span>
+        </div>
+      </el-col>
+    </el-row>
+    <el-divider></el-divider>
 
     <div class="block">
-      <span class="demonstration">hover 触发子菜单</span>
-      <el-cascader
-        v-model="value"
-        :options="options"
-        :props="{ expandTrigger: 'hover' }"
-        @change="handleChange"></el-cascader>
+      <el-timeline>
+        <el-timeline-item timestamp="2018/4/12" placement="top">
+          <el-card>
+            <h4>更新 Github 模板</h4>
+            <p>王小虎 提交于 2018/4/12 20:46</p>
+          </el-card>
+        </el-timeline-item>
+        <el-timeline-item timestamp="2018/4/3" placement="top">
+          <el-card>
+            <h4>更新 Github 模板</h4>
+            <p>王小虎 提交于 2018/4/3 20:46</p>
+          </el-card>
+        </el-timeline-item>
+        <el-timeline-item timestamp="2018/4/2" placement="top">
+          <el-card>
+            <h4>更新 Github 模板</h4>
+            <p>王小虎 提交于 2018/4/2 20:46</p>
+          </el-card>
+        </el-timeline-item>
+      </el-timeline>
     </div>
   </div>
 </template>
