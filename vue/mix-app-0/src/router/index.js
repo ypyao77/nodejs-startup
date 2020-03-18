@@ -5,14 +5,19 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path:'*', 
+    path:'*',
     hidden: true,
     component: () => import('../views/404')
   },
   {
     path: '/',
-    name: 'Button',
-    component: () => import('../views/Button')
+    name: 'Home',
+    component: () => import('../views/Env')
+  },
+  {
+    path: '/views/env',
+    name: 'Env',
+    component: () => import('../views/Env')
   },
   {
     path: '/views/button',
@@ -63,6 +68,11 @@ const routes = [
     path: '/views/msg',
     name: 'Msg',
     component: () => import('../views/Msg')
+  },
+  {
+    path: '/views/form',
+    name: 'Form',
+    component: () => import('../views/Form')
   },
   {
     path: '/views/cascader',

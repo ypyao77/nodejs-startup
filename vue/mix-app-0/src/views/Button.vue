@@ -5,7 +5,9 @@
       <el-button @click="openFullScreen1" v-loading.fullscreen.lock="fullscreenLoading">指令方式</el-button>
       <el-button @click="openFullScreen2">服务方式</el-button>
     </el-row>
-    <el-row><p/></el-row>
+
+    <el-divider></el-divider>
+
     <el-row>
       <el-button>默认按钮</el-button>
       <el-button type="primary">主要按钮</el-button>
@@ -14,7 +16,9 @@
       <el-button type="warning">警告按钮</el-button>
       <el-button type="danger">危险按钮</el-button>
     </el-row>
-    <el-row><p/></el-row>
+
+    <el-divider></el-divider>
+
     <el-row>
       <el-button plain>朴素按钮</el-button>
       <el-button type="primary" plain>主要按钮</el-button>
@@ -23,11 +27,15 @@
       <el-button type="warning" plain>警告按钮</el-button>
       <el-button type="danger" plain>危险按钮</el-button>
     </el-row>
-    <el-row><p/></el-row>
+
+    <el-divider></el-divider>
+
     <el-row>
       <el-switch v-model="value" active-color="#13ce66" inactive-color="#ff4949"></el-switch>
     </el-row>
-    <el-row><p/></el-row>
+
+    <el-divider></el-divider>
+
     <el-row>
       <el-button ><i class="el-icon-edit"></i></el-button>
       <el-button icon="el-icon-edit"></el-button>
@@ -37,7 +45,9 @@
       <el-button icon="el-icon-delete"></el-button>
       <el-button type="primary" icon="el-icon-search">搜索</el-button>
     </el-row>
-    <el-row><p/></el-row>
+
+    <el-divider></el-divider>
+
     <el-row>
       <el-tag>标签一</el-tag>...
       <el-tag type="success">标签二</el-tag>...
@@ -56,7 +66,9 @@
         {{ item.label }}
       </el-tag>
     </el-row>
-    <el-row><p/></el-row>
+
+    <el-divider></el-divider>
+
     <el-row>
       <span class="tag-group__title">Plain</span>
       <el-tag
@@ -67,6 +79,43 @@
         {{ item.label }}
       </el-tag>
     </el-row>
+
+    <el-divider></el-divider>
+
+    <el-row>
+      <el-col :span="1" :offset="3"><div/></el-col>
+
+      <el-col :span="1">
+        <i class="el-icon-edit"></i>
+      </el-col>
+      <el-col :span="1">
+        <i class="el-icon-share"></i>
+      </el-col>
+      <el-col :span="1">
+        <i class="el-icon-delete"></i>
+      </el-col>
+      <el-col :span="1">
+        <el-button type="primary" icon="el-icon-search">搜索</el-button>
+      </el-col>
+
+      <el-col :span="3"><div><p/></div></el-col>
+
+      <el-col :span="1">
+        <el-button icon="el-icon-edit"></el-button>
+      </el-col>
+      <el-col :span="1">
+        <el-button icon="el-icon-share"></el-button>
+      </el-col>
+      <el-col :span="1">
+        <el-button icon="el-icon-delete"></el-button>
+      </el-col>
+      <el-col :span="1">
+        <el-button type="primary" icon="el-icon-search">搜索</el-button>
+      </el-col>
+    </el-row>
+
+    <el-divider></el-divider>
+    <el-divider></el-divider>
   </div>
 </template>
 
