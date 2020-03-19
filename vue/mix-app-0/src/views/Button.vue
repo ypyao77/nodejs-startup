@@ -37,11 +37,17 @@
     <el-divider></el-divider>
 
     <el-row>
-      <el-button ><i class="el-icon-edit"></i></el-button>
+      <el-button>
+        <i class="el-icon-edit"></i>
+      </el-button>
       <el-button icon="el-icon-edit"></el-button>
-      <el-button ><i class="el-icon-share"></i></el-button>
+      <el-button>
+        <i class="el-icon-share"></i>
+      </el-button>
       <el-button icon="el-icon-share"></el-button>
-      <el-button ><i class="el-icon-delete"></i></el-button>
+      <el-button>
+        <i class="el-icon-delete"></i>
+      </el-button>
       <el-button icon="el-icon-delete"></el-button>
       <el-button type="primary" icon="el-icon-search">搜索</el-button>
     </el-row>
@@ -55,16 +61,17 @@
       <el-tag type="warning">标签四</el-tag>...
       <el-tag type="danger">标签五</el-tag>...
     </el-row>
-    <el-row><p/></el-row>
+    <el-row>
+      <p />
+    </el-row>
     <el-row>
       <span class="tag-group__title">Dark</span>
       <el-tag
         v-for="item in items"
         :key="item.label"
         :type="item.type"
-        effect="dark">
-        {{ item.label }}
-      </el-tag>
+        effect="dark"
+      >{{ item.label }}</el-tag>
     </el-row>
 
     <el-divider></el-divider>
@@ -75,15 +82,16 @@
         v-for="item in items"
         :key="item.label"
         :type="item.type"
-        effect="plain">
-        {{ item.label }}
-      </el-tag>
+        effect="plain"
+      >{{ item.label }}</el-tag>
     </el-row>
 
     <el-divider></el-divider>
 
     <el-row>
-      <el-col :span="1" :offset="3"><div/></el-col>
+      <el-col :span="1" :offset="3">
+        <div />
+      </el-col>
 
       <el-col :span="1">
         <i class="el-icon-edit"></i>
@@ -98,7 +106,11 @@
         <el-button type="primary" icon="el-icon-search">搜索</el-button>
       </el-col>
 
-      <el-col :span="3"><div><p/></div></el-col>
+      <el-col :span="3">
+        <div>
+          <p />
+        </div>
+      </el-col>
 
       <el-col :span="1">
         <el-button icon="el-icon-edit"></el-button>
@@ -128,21 +140,21 @@ export default {
       value: false,
       fullscreenLoading: false,
       items: [
-        { type: '', label: '标签一' },
-        { type: 'success', label: '标签二' },
-        { type: 'info', label: '标签三' },
-        { type: 'danger', label: '标签四' },
-        { type: 'warning', label: '标签五' }
+        { type: "", label: "标签一" },
+        { type: "success", label: "标签二" },
+        { type: "info", label: "标签三" },
+        { type: "danger", label: "标签四" },
+        { type: "warning", label: "标签五" }
       ]
-    }
+    };
   },
   methods: {
     onClick() {
-      this.showLoading = true
-      let _this = this
+      this.showLoading = true;
+      let _this = this;
       setTimeout(function() {
-        _this.showLoading = false
-      }, 2000)
+        _this.showLoading = false;
+      }, 2000);
     },
     openFullScreen1() {
       this.fullscreenLoading = true;
@@ -151,16 +163,16 @@ export default {
       }, 2000);
     },
     openFullScreen2() {
-        const loading = this.$loading({
-          lock: true,
-          text: 'Loading',
-          spinner: 'el-icon-loading',
-          background: 'rgba(0, 0, 0, 0.7)'
-        });
-        setTimeout(() => {
-          loading.close();
-        }, 2000);
-      }
+      const loading = this.$loading({
+        lock: true,
+        text: "Loading",
+        spinner: "el-icon-loading",
+        background: "rgba(0, 0, 0, 0.7)"
+      });
+      setTimeout(() => {
+        loading.close();
+      }, 2000);
+    }
   }
-}
+};
 </script>

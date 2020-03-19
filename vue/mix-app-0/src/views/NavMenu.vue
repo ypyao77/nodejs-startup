@@ -1,6 +1,5 @@
 <template>
   <div class="about">
-
     <el-divider>这是面包屑演示</el-divider>
     <el-row :gutter="4">
       <el-col :span="8">
@@ -14,11 +13,24 @@
 
       <el-col :span="8">
         <el-breadcrumb separator="/">
-          <el-breadcrumb-item ><el-link :underline="false" icon="el-icon-home">首页</el-link></el-breadcrumb-item>
-          <el-breadcrumb-item ><el-link :underline="false" icon="el-icon-user">用户</el-link></el-breadcrumb-item>
-          <el-breadcrumb-item ><el-link :underline="false" icon="el-icon-edit">搜索</el-link></el-breadcrumb-item>
-          <el-breadcrumb-item ><el-link :underline="false" icon="el-icon-edit">编辑</el-link></el-breadcrumb-item>
-          <el-breadcrumb-item ><el-link :underline="false">查看<i class="el-icon-view el-icon--right"></i> </el-link></el-breadcrumb-item>
+          <el-breadcrumb-item>
+            <el-link :underline="false" icon="el-icon-home">首页</el-link>
+          </el-breadcrumb-item>
+          <el-breadcrumb-item>
+            <el-link :underline="false" icon="el-icon-user">用户</el-link>
+          </el-breadcrumb-item>
+          <el-breadcrumb-item>
+            <el-link :underline="false" icon="el-icon-edit">搜索</el-link>
+          </el-breadcrumb-item>
+          <el-breadcrumb-item>
+            <el-link :underline="false" icon="el-icon-edit">编辑</el-link>
+          </el-breadcrumb-item>
+          <el-breadcrumb-item>
+            <el-link :underline="false">
+              查看
+              <i class="el-icon-view el-icon--right"></i>
+            </el-link>
+          </el-breadcrumb-item>
         </el-breadcrumb>
       </el-col>
 
@@ -39,7 +51,8 @@
           default-active="2"
           class="el-menu-vertical-demo"
           @open="handleOpen"
-          @close="handleClose">
+          @close="handleClose"
+        >
           <el-submenu index="1">
             <template slot="title">
               <i class="el-icon-location"></i>
@@ -81,7 +94,8 @@
           @close="handleClose"
           background-color="#545c64"
           text-color="#fff"
-          active-text-color="#ffd04b">
+          active-text-color="#ffd04b"
+        >
           <el-submenu index="1">
             <template slot="title">
               <i class="el-icon-location"></i>
@@ -123,7 +137,8 @@
           @select="handleSelect"
           background-color="#545c64"
           text-color="#fff"
-          active-text-color="#ffd04b">
+          active-text-color="#ffd04b"
+        >
           <el-menu-item index="1">处理中心</el-menu-item>
           <el-submenu index="2">
             <template slot="title">我的工作台</template>
@@ -138,8 +153,12 @@
             </el-submenu>
           </el-submenu>
           <el-menu-item index="3" disabled>消息中心</el-menu-item>
-          <el-menu-item index="4"><a href="https://www.ele.me">去饿了吗</a></el-menu-item>
-          <el-menu-item index="4"><el-link href="https://www.ele.me">去饿了吗</el-link></el-menu-item>
+          <el-menu-item index="4">
+            <a href="https://www.ele.me">去饿了吗</a>
+          </el-menu-item>
+          <el-menu-item index="4">
+            <el-link href="https://www.ele.me">去饿了吗</el-link>
+          </el-menu-item>
         </el-menu>
       </el-col>
     </el-row>
@@ -150,7 +169,8 @@
       <el-col :span="4" :offset="2">
         <el-dropdown @command="handleCommand">
           <span class="el-dropdown-link">
-            下拉菜单<i class="el-icon-arrow-down el-icon--right"></i>
+            下拉菜单
+            <i class="el-icon-arrow-down el-icon--right"></i>
           </span>
           <el-dropdown-menu slot="dropdown">
             <el-dropdown-item command="a">黄金糕</el-dropdown-item>
@@ -168,8 +188,8 @@
             v-for="item in options"
             :key="item.value"
             :label="item.label"
-            :value="item.value">
-          </el-option>
+            :value="item.value"
+          ></el-option>
         </el-select>
       </el-col>
 
@@ -229,50 +249,56 @@
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        activeIndex: '1',
-        activeIndex2: '1',
+export default {
+  data() {
+    return {
+      activeIndex: "1",
+      activeIndex2: "1",
 
-        options: [{
-          value: '选项1',
-          label: '黄金糕'
-        }, {
-          value: '选项2',
-          label: '双皮奶'
-        }, {
-          value: '选项3',
-          label: '蚵仔煎'
-        }, {
-          value: '选项4',
-          label: '龙须面'
-        }, {
-          value: '选项5',
-          label: '北京烤鸭'
-        }],
-        value1: []
-      };
+      options: [
+        {
+          value: "选项1",
+          label: "黄金糕"
+        },
+        {
+          value: "选项2",
+          label: "双皮奶"
+        },
+        {
+          value: "选项3",
+          label: "蚵仔煎"
+        },
+        {
+          value: "选项4",
+          label: "龙须面"
+        },
+        {
+          value: "选项5",
+          label: "北京烤鸭"
+        }
+      ],
+      value1: []
+    };
+  },
+  methods: {
+    handleSelect(key, keyPath) {
+      this.key, (this.keyPath = key), keyPath;
+      // console.log(key, keyPath);
     },
-    methods: {
-      handleSelect(key, keyPath) {
-        this.key, this.keyPath = key, keyPath
-        // console.log(key, keyPath);
-      },
-      handleCommand(command) {
-        this.$message('click on item ' + command);
-      }
+    handleCommand(command) {
+      this.$message("click on item " + command);
     }
   }
+};
 </script>
 
 
 <style>
-  .el-dropdown-link {
-    cursor: pointer;
-    color: #409EFF;
-  }
-  .el-icon-arrow-down {
-    font-size: 12px;
-  }
+.el-dropdown-link {
+  cursor: pointer;
+  color: #409eff;
+}
+.el-icon-arrow-down {
+  font-size: 12px;
+}
 </style>

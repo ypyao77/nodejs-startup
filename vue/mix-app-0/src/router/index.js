@@ -27,7 +27,7 @@ const routes = [
   {
     path: '/views/badge',
     name: 'Badge',
-    component: () => import('../views/Badge')
+    component: () => import('../views/Badge/index.vue')
   },
   {
     path: '/views/dialog',
