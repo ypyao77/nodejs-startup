@@ -9,7 +9,7 @@ const routes = [
     hidden: true,
     component: () => import('@/views/404'),
     meta: {
-      title: "404错误"
+      title: '404错误'
     }
   },
   {
@@ -17,7 +17,7 @@ const routes = [
     name: 'Home',
     component: () => import('@/views/Env'),
     meta: {
-      title: "首页"
+      title: '首页'
     }
   },
   {
@@ -25,7 +25,7 @@ const routes = [
     name: 'Env',
     component: () => import('@/views/Env'),
     meta: {
-      title: "首页"
+      title: '首页'
     }
   },
   {
@@ -33,7 +33,7 @@ const routes = [
     name: 'Button',
     component: () => import('@/views/Button'),
     meta: {
-      title: "按钮"
+      title: '按钮'
     }
   },
   {
@@ -41,7 +41,7 @@ const routes = [
     name: 'Badge',
     component: () => import('@/views/Badge/index.vue'),
     meta: {
-      title: "标记"
+      title: '标记'
     }
   },
   {
@@ -49,7 +49,7 @@ const routes = [
     name: 'Dialog',
     component: () => import('@/views/Dialog'),
     meta: {
-      title: "对话框"
+      title: '对话框'
     }
   },
   {
@@ -57,7 +57,7 @@ const routes = [
     name: 'Layout',
     component: () => import('@/views/Layout'),
     meta: {
-      title: "布局"
+      title: '布局'
     }
   },
   {
@@ -65,7 +65,7 @@ const routes = [
     name: 'NavMenu',
     component: () => import('@/views/NavMenu'),
     meta: {
-      title: "导航条"
+      title: '导航条'
     }
   },
   {
@@ -73,7 +73,7 @@ const routes = [
     name: 'Edit',
     component: () => import('@/views/Edit'),
     meta: {
-      title: "编辑框"
+      title: '编辑框'
     }
   },
   {
@@ -81,23 +81,23 @@ const routes = [
     name: 'Scroll',
     component: () => import('@/views/Scroll'),
     meta: {
-      title: "滚动条"
+      title: '滚动条'
     }
   },
   {
     path: '/views/echarts',
     name: 'ECharts',
-    component: () => import('@/views/ECharts'),
+    component: () => import('@/views/ECharts/index.vue'),
     meta: {
-      title: "图表echarts"
+      title: '图表echarts'
     }
   },
   {
     path: '/views/vcharts',
     name: 'VCharts',
-    component: () => import('@/views/VCharts'),
+    component: () => import('@/views/VCharts/index.vue'),
     meta: {
-      title: "图表vcharts"
+      title: '图表vcharts'
     }
   },
   {
@@ -105,7 +105,7 @@ const routes = [
     name: 'Msg',
     component: () => import('@/views/Msg'),
     meta: {
-      title: "消息"
+      title: '消息'
     }
   },
   {
@@ -113,7 +113,7 @@ const routes = [
     name: 'Form',
     component: () => import('@/views/Form'),
     meta: {
-      title: "表单"
+      title: '表单'
     }
   },
   {
@@ -121,7 +121,7 @@ const routes = [
     name: 'Cascader',
     component: () => import('@/views/Cascader'),
     meta: {
-      title: "联级选择"
+      title: '联级选择'
     }
   }
 ]

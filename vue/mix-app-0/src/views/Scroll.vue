@@ -2,42 +2,26 @@
   <div class="scroll">
     <el-row :gutter="10">
       <el-col :span="4">
-        <div class="div1">
-          实现左边竖线, 实现左边竖线, 实现左边竖线, 实现左边竖线
-        </div>
+        <div class="div1">实现左边竖线, 实现左边竖线, 实现左边竖线, 实现左边竖线</div>
       </el-col>
       <el-col :span="4">
-        <div class="div2">
-          实现左边竖线, 实现左边竖线, 实现左边竖线, 实现左边竖线
-        </div>
+        <div class="div2">实现左边竖线, 实现左边竖线, 实现左边竖线, 实现左边竖线</div>
       </el-col>
       <el-col :span="4">
-        <div class="div3">
-          实现左边竖线, 实现左边竖线, 实现左边竖线, 实现左边竖线
-        </div>
+        <div class="div3">实现左边竖线, 实现左边竖线, 实现左边竖线, 实现左边竖线</div>
       </el-col>
       <el-col :span="4">
-        <div class="div4">
-          实现左边竖线, 实现左边竖线, 实现左边竖线, 实现左边竖线
-        </div>
+        <div class="div4">实现左边竖线, 实现左边竖线, 实现左边竖线, 实现左边竖线</div>
       </el-col>
       <el-col :span="4">
-        <div class="div5">
-          实现左边竖线, 实现左边竖线, 实现左边竖线, 实现左边竖线
-        </div>
+        <div class="div5">实现左边竖线, 实现左边竖线, 实现左边竖线, 实现左边竖线</div>
       </el-col>
     </el-row>
 
     <el-row :gutter="10">
       <el-col :span="4" :offset="2">
-        <ul
-          class="infinite-list"
-          v-infinite-scroll="load1"
-          style="overflow:auto"
-        >
-          <li v-for="i in count1" :key="i" class="infinite-list-item">
-            {{ i }}
-          </li>
+        <ul class="infinite-list" v-infinite-scroll="load1" style="overflow:auto">
+          <li v-for="i in count1" :key="i" class="infinite-list-item">{{ i }}</li>
         </ul>
       </el-col>
 

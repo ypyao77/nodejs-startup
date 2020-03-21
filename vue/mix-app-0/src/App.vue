@@ -19,10 +19,10 @@
 
     <el-divider></el-divider>
 
-    <keep-alive>
+    <!-- <keep-alive>
       <router-view />
-    </keep-alive>
-
+    </keep-alive> -->
+    <router-view />
   </div>
 </template>
 

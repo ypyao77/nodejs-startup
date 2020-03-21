@@ -99,5 +99,5 @@
 </template>
 
 <style scoped>
-  @import './Badge.css'
+@import "./Badge.css";
 </style>

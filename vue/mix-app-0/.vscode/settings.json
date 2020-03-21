@@ -1,0 +1,41 @@
+{
+  "vetur.format.options.tabSize": 2,
+  "vetur.format.scriptInitialIndent": true,
+  "vetur.format.defaultFormatterOptions": {
+    "prettyhtml": {
+      "printWidth": 140
+    },
+    "prettier": {
+      "singleQuote": true,
+      "printWidth": 400,
+      "proseWrap": "never"
+    }
+  },
+  "prettier.semi": true,
+  "prettier.printWidth": 400,
+  "prettier.proseWrap": "never",
+  "prettier.singleQuote": true,
+  "vetur.validation.template": false,
+  "editor.formatOnSave": true,
+  "cssrem.rootFontSize": 75,
+  "prettier-eslint.eslintIntegration": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    {
+      "language": "html",
+      "autoFix": true
+    },
+    {
+      "language": "vue",
+      "autoFix": true
+    },
+    "html",
+    "vue"
+  ],
+  "eslint.autoFixOnSave": true,
+
+  "vetur.format.defaultFormatter.js": "vscode-typescript",
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "javascript.format.enable": true
+}
