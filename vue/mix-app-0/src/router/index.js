@@ -39,7 +39,7 @@ const routes = [
   {
     path: '/views/badge',
     name: 'Badge',
-    component: () => import('@/views/Badge/index.vue'),
+    component: () => import('@/views/Badge'),
     meta: {
       title: '标记'
     }
@@ -87,7 +87,7 @@ const routes = [
   {
     path: '/views/echarts',
     name: 'ECharts',
-    component: () => import('@/views/ECharts/index.vue'),
+    component: () => import('@/views/ECharts'),
     meta: {
       title: '图表echarts'
     }
@@ -95,7 +95,7 @@ const routes = [
   {
     path: '/views/vcharts',
     name: 'VCharts',
-    component: () => import('@/views/VCharts/index.vue'),
+    component: () => import('@/views/VCharts'),
     meta: {
       title: '图表vcharts'
     }
