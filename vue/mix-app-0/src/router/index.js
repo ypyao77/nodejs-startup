@@ -5,7 +5,7 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path:'*',
+    path: '*',
     hidden: true,
     component: () => import('@/views/404'),
     meta: {

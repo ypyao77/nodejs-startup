@@ -1,20 +1,20 @@
-import echarts from 'echarts';
+import echarts from 'echarts'
 
 export default {
   mounted() {
-    this.drawLine6();
+    this.drawLine6()
   },
   methods: {
     drawLine6() {
       let item1 = {
         color: '#F54F4A'
-      };
+      }
       let item2 = {
         color: '#FF8C75'
-      };
+      }
       let item3 = {
         color: '#FFB499'
-      };
+      }
 
       let data = [
         {
@@ -222,7 +222,7 @@ export default {
           ],
           itemStyle: item1
         }
-      ];
+      ]
 
       const option = {
         title: { text: 'vue中引入ECharts6', x: 'center', y: 'bottom' },
@@ -241,10 +241,10 @@ export default {
             borderWidth: 2
           }
         }
-      };
+      }
 
-      let myChart = echarts.init(document.getElementById('myChart6'));
-      myChart.setOption(option);
+      let myChart = echarts.init(document.getElementById('myChart6'))
+      myChart.setOption(option)
     }
   }
-};
+}

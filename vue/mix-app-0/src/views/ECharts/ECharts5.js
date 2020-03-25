@@ -1,8 +1,8 @@
-import echarts from 'echarts';
+import echarts from 'echarts'
 
 export default {
   mounted() {
-    this.drawLine5();
+    this.drawLine5()
   },
   methods: {
     drawLine5() {
@@ -184,10 +184,10 @@ export default {
             ]
           }
         ]
-      };
+      }
 
-      let myChart = echarts.init(document.getElementById('myChart5'));
-      myChart.setOption(option);
+      let myChart = echarts.init(document.getElementById('myChart5'))
+      myChart.setOption(option)
     }
   }
-};
+}

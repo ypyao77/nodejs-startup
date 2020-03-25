@@ -1,12 +1,12 @@
-import echarts from 'echarts';
+import echarts from 'echarts'
 
 export default {
   mounted() {
-    this.drawLine3();
+    this.drawLine3()
   },
   methods: {
     drawLine3() {
-      const myChart = echarts.init(document.getElementById('myChart3'));
+      const myChart = echarts.init(document.getElementById('myChart3'))
       myChart.setOption({
         title: { text: 'vue中引入ECharts3', x: 'center', y: 'bottom' },
         tooltip: {
@@ -18,7 +18,17 @@ export default {
         xAxis: [
           {
             type: 'category',
-            data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月'],
+            data: [
+              '1月',
+              '2月',
+              '3月',
+              '4月',
+              '5月',
+              '6月',
+              '7月',
+              '8月',
+              '9月'
+            ],
             axisPointer: {
               type: 'shadow',
               lineStyle: {
@@ -115,7 +125,7 @@ export default {
             }
           }
         ]
-      });
+      })
     }
   }
-};
+}

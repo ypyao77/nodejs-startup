@@ -1,8 +1,8 @@
-import echarts from 'echarts';
+import echarts from 'echarts'
 
 export default {
   mounted() {
-    this.drawLine4();
+    this.drawLine4()
   },
   methods: {
     drawLine4() {
@@ -232,11 +232,11 @@ export default {
               formatter: function(v) {
                 switch (v + '') {
                   case '0':
-                    return 'E';
+                    return 'E'
                   case '1':
-                    return 'Gas';
+                    return 'Gas'
                   case '2':
-                    return 'F';
+                    return 'F'
                 }
               }
             },
@@ -300,11 +300,11 @@ export default {
               formatter: function(v) {
                 switch (v + '') {
                   case '0':
-                    return 'H';
+                    return 'H'
                   case '1':
-                    return 'Water';
+                    return 'Water'
                   case '2':
-                    return 'C';
+                    return 'C'
                 }
               }
             },
@@ -333,15 +333,15 @@ export default {
             data: [{ value: 0.5, name: 'gas' }]
           }
         ]
-      };
+      }
 
-      option.series[0].data[0].value = (Math.random() * 100).toFixed(2) - 0;
-      option.series[1].data[0].value = (Math.random() * 7).toFixed(2) - 0;
-      option.series[2].data[0].value = (Math.random() * 2).toFixed(2) - 0;
-      option.series[3].data[0].value = (Math.random() * 2).toFixed(2) - 0;
+      option.series[0].data[0].value = (Math.random() * 100).toFixed(2) - 0
+      option.series[1].data[0].value = (Math.random() * 7).toFixed(2) - 0
+      option.series[2].data[0].value = (Math.random() * 2).toFixed(2) - 0
+      option.series[3].data[0].value = (Math.random() * 2).toFixed(2) - 0
 
-      let myChart = echarts.init(document.getElementById('myChart4'));
-      myChart.setOption(option);
+      let myChart = echarts.init(document.getElementById('myChart4'))
+      myChart.setOption(option)
     }
   }
-};
+}

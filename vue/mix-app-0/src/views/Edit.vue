@@ -66,16 +66,10 @@
       <el-col :span="4">
         <div>
           <h2>Will apply to:</h2>
-          <a
-            title="w3cschool"
-            href="http://w3cschool.cn"
-          >w3cschool</a>
+          <a title="w3cschool" href="http://w3cschool.cn">w3cschool</a>
           <h2>Will not apply to:</h2>
           <p title="greeting">Hi!</p>
-          <a
-            class="w3cschool"
-            href="http://w3cschool.cn"
-          >w3cschool</a>
+          <a class="w3cschool" href="http://w3cschool.cn">w3cschool</a>
         </div>
       </el-col>
     </el-row>
@@ -108,95 +102,38 @@
 
       <el-col :span="10">
         <div id="main">
-          <div
-            style="background-color:coral;"
-            id="myRedDIV"
-          ></div>
-          <div
-            style="background-color:lightblue;"
-            id="myBlueDIV"
-          ></div>
-          <div
-            style="background-color:lightgreen;"
-            id="myGreenDIV"
-          ></div>
-          <div
-            style="background-color:pink;"
-            id="myPinkDIV"
-          ></div>
+          <div style="background-color:coral;" id="myRedDIV"></div>
+          <div style="background-color:lightblue;" id="myBlueDIV"></div>
+          <div style="background-color:lightgreen;" id="myGreenDIV"></div>
+          <div style="background-color:pink;" id="myPinkDIV"></div>
         </div>
       </el-col>
     </el-row>
 
     <el-row :gutter="4">
-      <el-col
-        :span="4"
-        :offset="4"
-      >
-        <el-input
-          placeholder="请输入内容"
-          suffix-icon="el-icon-date"
-          v-model="input1"
-        ></el-input>
+      <el-col :span="4" :offset="4">
+        <el-input placeholder="请输入内容" suffix-icon="el-icon-date" v-model="input1"></el-input>
       </el-col>
       <el-col :span="4">
-        <el-input
-          size="medium"
-          placeholder="请输入内容"
-          suffix-icon="el-icon-date"
-          v-model="input2"
-        ></el-input>
+        <el-input size="medium" placeholder="请输入内容" suffix-icon="el-icon-date" v-model="input2"></el-input>
       </el-col>
       <el-col :span="4">
-        <el-input
-          size="small"
-          placeholder="请输入内容"
-          suffix-icon="el-icon-date"
-          v-model="input3"
-        ></el-input>
+        <el-input size="small" placeholder="请输入内容" suffix-icon="el-icon-date" v-model="input3"></el-input>
       </el-col>
       <el-col :span="4">
-        <el-input
-          size="mini"
-          placeholder="请输入内容"
-          suffix-icon="el-icon-date"
-          v-model="input4"
-        ></el-input>
+        <el-input size="mini" placeholder="请输入内容" suffix-icon="el-icon-date" v-model="input4"></el-input>
       </el-col>
     </el-row>
 
     <el-row :gutter="4">
-      <el-col
-        :span="4"
-        :offset="4"
-      >
-        <el-input
-          placeholder="请输入密码"
-          v-model="input"
-          show-password
-          width="300px"
-        ></el-input>
+      <el-col :span="4" :offset="4">
+        <el-input placeholder="请输入密码" v-model="input" show-password width="300px"></el-input>
       </el-col>
-      <el-col
-        :span="4"
-        :offset="4"
-      >
-        <el-input
-          type="text"
-          placeholder="请输入内容"
-          v-model="text"
-          maxlength="30"
-          show-word-limit
-        ></el-input>
+      <el-col :span="4" :offset="4">
+        <el-input type="text" placeholder="请输入内容" v-model="text" maxlength="30" show-word-limit></el-input>
       </el-col>
       <el-col :span="4">
-        <el-input
-          type="textarea"
-          placeholder="请输入内容"
-          v-model="textarea"
-          maxlength="30"
-          show-word-limit
-        ></el-input>
+        <el-input type="textarea" placeholder="请输入内容" v-model="textarea" maxlength="30" show-word-limit></el-input>
       </el-col>
     </el-row>
   </div>
@@ -204,20 +141,20 @@
 
 
 <script scoped>
-  export default {
-    data() {
-      return {
-        input: '',
-        input1: '',
-        input2: '',
-        input3: '',
-        input4: '',
+export default {
+  data() {
+    return {
+      input: '',
+      input1: '',
+      input2: '',
+      input3: '',
+      input4: '',
 
-        text: '',
-        textarea: ''
-      };
+      text: '',
+      textarea: ''
     }
-  };
+  }
+}
 </script>
 
 <style>

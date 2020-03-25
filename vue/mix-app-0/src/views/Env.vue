@@ -58,11 +58,7 @@
             <el-table-column label="操作">
               <template slot-scope="scope">
                 <el-button size="mini" @click="handleEdit(scope.$index, scope.row)">编辑</el-button>
-                <el-button
-                  size="mini"
-                  type="danger"
-                  @click="handleDelete(scope.$index, scope.row)"
-                >删除</el-button>
+                <el-button size="mini" type="danger" @click="handleDelete(scope.$index, scope.row)">删除</el-button>
               </template>
             </el-table-column>
           </el-table>
@@ -75,11 +71,7 @@
     <el-row :gutter="4">
       <el-col :span="8">
         <el-card shadow="hover">
-          <el-table
-            :data="tableData"
-            style="width: 100%"
-            :default-sort="{prop: 'date', order: 'descending'}"
-          >
+          <el-table :data="tableData" style="width: 100%" :default-sort="{prop: 'date', order: 'descending'}">
             <el-table-column prop="date" label="日期" sortable width="180"></el-table-column>
             <el-table-column prop="name" label="姓名" sortable width="180"></el-table-column>
             <el-table-column prop="address" label="地址" :formatter="formatter"></el-table-column>
@@ -101,14 +93,7 @@
 
       <el-col :span="8">
         <el-card shadow="hover">
-          <el-table
-            :data="tableDataX"
-            border
-            height="328"
-            :summary-method="getSummaries"
-            show-summary
-            style="width: 100%; margin-top: 20px"
-          >
+          <el-table :data="tableDataX" border height="328" :summary-method="getSummaries" show-summary style="width: 100%; margin-top: 20px">
             <el-table-column prop="id" label="ID" width="180"></el-table-column>
             <el-table-column prop="name" label="姓名"></el-table-column>
             <el-table-column prop="amount1" label="数值 1（元）"></el-table-column>
@@ -131,159 +116,159 @@ export default {
 
       tableData2: [
         {
-          date: "2016-05-02",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1518 弄"
+          date: '2016-05-02',
+          name: '王小虎',
+          address: '上海市普陀区金沙江路 1518 弄'
         },
         {
-          date: "2016-05-04",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1518 弄"
+          date: '2016-05-04',
+          name: '王小虎',
+          address: '上海市普陀区金沙江路 1518 弄'
         },
         {
-          date: "2016-05-01",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1518 弄"
+          date: '2016-05-01',
+          name: '王小虎',
+          address: '上海市普陀区金沙江路 1518 弄'
         },
         {
-          date: "2016-05-03",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1518 弄"
+          date: '2016-05-03',
+          name: '王小虎',
+          address: '上海市普陀区金沙江路 1518 弄'
         }
       ],
 
       tableData: [
         {
-          date: "2016-05-02",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1518 弄"
+          date: '2016-05-02',
+          name: '王小虎',
+          address: '上海市普陀区金沙江路 1518 弄'
         },
         {
-          date: "2016-05-04",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1517 弄"
+          date: '2016-05-04',
+          name: '王小虎',
+          address: '上海市普陀区金沙江路 1517 弄'
         },
         {
-          date: "2016-05-01",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1519 弄"
+          date: '2016-05-01',
+          name: '王小虎',
+          address: '上海市普陀区金沙江路 1519 弄'
         },
         {
-          date: "2016-05-03",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1516 弄"
+          date: '2016-05-03',
+          name: '王小虎',
+          address: '上海市普陀区金沙江路 1516 弄'
         }
       ],
 
       tableDataX: [
         {
-          id: "12987122",
-          name: "王小虎",
-          amount1: "234",
-          amount2: "3.2",
+          id: '12987122',
+          name: '王小虎',
+          amount1: '234',
+          amount2: '3.2',
           amount3: 10
         },
         {
-          id: "12987123",
-          name: "王小虎",
-          amount1: "165",
-          amount2: "4.43",
+          id: '12987123',
+          name: '王小虎',
+          amount1: '165',
+          amount2: '4.43',
           amount3: 12
         },
         {
-          id: "12987124",
-          name: "王小虎",
-          amount1: "324",
-          amount2: "1.9",
+          id: '12987124',
+          name: '王小虎',
+          amount1: '324',
+          amount2: '1.9',
           amount3: 9
         },
         {
-          id: "12987125",
-          name: "王小虎",
-          amount1: "621",
-          amount2: "2.2",
+          id: '12987125',
+          name: '王小虎',
+          amount1: '621',
+          amount2: '2.2',
           amount3: 17
         },
         {
-          id: "12987126",
-          name: "王小虎",
-          amount1: "539",
-          amount2: "4.1",
+          id: '12987126',
+          name: '王小虎',
+          amount1: '539',
+          amount2: '4.1',
           amount3: 15
         }
       ]
-    };
+    }
   },
 
   methods: {
     getTableData1() {
-      let tableData = [];
-      let num = 1;
+      let tableData = []
+      let num = 1
 
-      console.log("hahaha");
+      console.log('hahaha')
       for (let k in process.env) {
-        let item = {};
-        item["no"] = num;
-        item["key"] = k;
-        item["value"] = process.env[k];
-        num = num + 1;
-        console.log(item);
-        tableData.push(item);
+        let item = {}
+        item['no'] = num
+        item['key'] = k
+        item['value'] = process.env[k]
+        num = num + 1
+        console.log(item)
+        tableData.push(item)
       }
-      return tableData;
+      return tableData
     },
 
     tableRowClassName({ row, rowIndex }) {
-      console.log(rowIndex);
-      console.log(row);
+      console.log(rowIndex)
+      console.log(row)
       if (rowIndex === 1) {
-        return "warning-row";
+        return 'warning-row'
       } else if (rowIndex === 3) {
-        return "success-row";
+        return 'success-row'
       }
-      return "";
+      return ''
     },
 
     handleEdit(index, row) {
-      console.log(index, row);
+      console.log(index, row)
     },
     handleDelete(index, row) {
-      console.log(index, row);
+      console.log(index, row)
     },
 
     formatter(row, column) {
-      console.log(column);
-      return row.address;
+      console.log(column)
+      return row.address
     },
 
     getSummaries(param) {
-      const { columns, data } = param;
-      const sums = [];
+      const { columns, data } = param
+      const sums = []
       columns.forEach((column, index) => {
         if (index === 0) {
-          sums[index] = "总价";
-          return;
+          sums[index] = '总价'
+          return
         }
-        const values = data.map(item => Number(item[column.property]));
+        const values = data.map(item => Number(item[column.property]))
         if (!values.every(value => isNaN(value))) {
           sums[index] = values.reduce((prev, curr) => {
-            const value = Number(curr);
+            const value = Number(curr)
             if (!isNaN(value)) {
-              return prev + curr;
+              return prev + curr
             } else {
-              return prev;
+              return prev
             }
-          }, 0);
-          sums[index] += " 元";
+          }, 0)
+          sums[index] += ' 元'
         } else {
-          sums[index] = "N/A";
+          sums[index] = 'N/A'
         }
-      });
+      })
 
-      return sums;
+      return sums
     }
   }
-};
+}
 </script>
 
 <style>

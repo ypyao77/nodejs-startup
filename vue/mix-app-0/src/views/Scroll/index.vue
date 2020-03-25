@@ -77,7 +77,7 @@ export default {
 </script>
 
 <style scoped>
-@import "./div.css";
-@import "./scroll1.css";
-@import "./scroll2.css";
+@import './div.css';
+@import './scroll1.css';
+@import './scroll2.css';
 </style>

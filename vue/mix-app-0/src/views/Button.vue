@@ -66,24 +66,14 @@
     </el-row>
     <el-row>
       <span class="tag-group__title">Dark</span>
-      <el-tag
-        v-for="item in items"
-        :key="item.label"
-        :type="item.type"
-        effect="dark"
-      >{{ item.label }}</el-tag>
+      <el-tag v-for="item in items" :key="item.label" :type="item.type" effect="dark">{{ item.label }}</el-tag>
     </el-row>
 
     <el-divider></el-divider>
 
     <el-row>
       <span class="tag-group__title">Plain</span>
-      <el-tag
-        v-for="item in items"
-        :key="item.label"
-        :type="item.type"
-        effect="plain"
-      >{{ item.label }}</el-tag>
+      <el-tag v-for="item in items" :key="item.label" :type="item.type" effect="plain">{{ item.label }}</el-tag>
     </el-row>
 
     <el-divider></el-divider>
@@ -140,39 +130,39 @@ export default {
       value: false,
       fullscreenLoading: false,
       items: [
-        { type: "", label: "标签一" },
-        { type: "success", label: "标签二" },
-        { type: "info", label: "标签三" },
-        { type: "danger", label: "标签四" },
-        { type: "warning", label: "标签五" }
+        { type: '', label: '标签一' },
+        { type: 'success', label: '标签二' },
+        { type: 'info', label: '标签三' },
+        { type: 'danger', label: '标签四' },
+        { type: 'warning', label: '标签五' }
       ]
-    };
+    }
   },
   methods: {
     onClick() {
-      this.showLoading = true;
-      let _this = this;
-      setTimeout(function() {
-        _this.showLoading = false;
-      }, 2000);
+      this.showLoading = true
+      let _this = this
+      setTimeout(function () {
+        _this.showLoading = false
+      }, 2000)
     },
     openFullScreen1() {
-      this.fullscreenLoading = true;
+      this.fullscreenLoading = true
       setTimeout(() => {
-        this.fullscreenLoading = false;
-      }, 2000);
+        this.fullscreenLoading = false
+      }, 2000)
     },
     openFullScreen2() {
       const loading = this.$loading({
         lock: true,
-        text: "Loading",
-        spinner: "el-icon-loading",
-        background: "rgba(0, 0, 0, 0.7)"
-      });
+        text: 'Loading',
+        spinner: 'el-icon-loading',
+        background: 'rgba(0, 0, 0, 0.7)'
+      })
       setTimeout(() => {
-        loading.close();
-      }, 2000);
+        loading.close()
+      }, 2000)
     }
   }
-};
+}
 </script>

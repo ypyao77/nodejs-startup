@@ -47,12 +47,7 @@
     <el-divider>这是菜单演示</el-divider>
     <el-row :gutter="4">
       <el-col :span="4">
-        <el-menu
-          default-active="2"
-          class="el-menu-vertical-demo"
-          @open="handleOpen"
-          @close="handleClose"
-        >
+        <el-menu default-active="2" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose">
           <el-submenu index="1">
             <template slot="title">
               <i class="el-icon-location"></i>
@@ -87,15 +82,7 @@
       </el-col>
 
       <el-col :span="4">
-        <el-menu
-          default-active="2"
-          class="el-menu-vertical-demo"
-          @open="handleOpen"
-          @close="handleClose"
-          background-color="#545c64"
-          text-color="#fff"
-          active-text-color="#ffd04b"
-        >
+        <el-menu default-active="2" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
           <el-submenu index="1">
             <template slot="title">
               <i class="el-icon-location"></i>
@@ -130,15 +117,7 @@
       </el-col>
 
       <el-col :span="8">
-        <el-menu
-          :default-active="activeIndex2"
-          class="el-menu-demo"
-          mode="horizontal"
-          @select="handleSelect"
-          background-color="#545c64"
-          text-color="#fff"
-          active-text-color="#ffd04b"
-        >
+        <el-menu :default-active="activeIndex2" class="el-menu-demo" mode="horizontal" @select="handleSelect" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
           <el-menu-item index="1">处理中心</el-menu-item>
           <el-submenu index="2">
             <template slot="title">我的工作台</template>
@@ -184,12 +163,7 @@
 
       <el-col :span="4">
         <el-select v-model="value1" multiple clearable placeholder="请选择">
-          <el-option
-            v-for="item in options"
-            :key="item.value"
-            :label="item.label"
-            :value="item.value"
-          ></el-option>
+          <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value"></el-option>
         </el-select>
       </el-col>
 

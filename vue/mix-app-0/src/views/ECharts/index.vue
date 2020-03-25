@@ -43,27 +43,27 @@
 </template>
 
 <script scoped>
-  import ECharts1 from './ECharts1.js';
-  import ECharts2 from './ECharts2.js';
-  import ECharts3 from './ECharts3.js';
-  import ECharts4 from './ECharts4.js';
-  import ECharts5 from './ECharts5.js';
-  import ECharts6 from './ECharts6.js';
+import ECharts1 from './ECharts1.js';
+import ECharts2 from './ECharts2.js';
+import ECharts3 from './ECharts3.js';
+import ECharts4 from './ECharts4.js';
+import ECharts5 from './ECharts5.js';
+import ECharts6 from './ECharts6.js';
 
-  export default {
-    name: 'echarts',
+export default {
+  name: 'echarts',
 
-    /* TODO： 定义mixin模块的方法时，给出不同的方法名，不然可能会被覆盖 */
-    mixins: [ECharts1, ECharts2, ECharts3, ECharts4, ECharts5, ECharts6],
+  /* TODO： 定义mixin模块的方法时，给出不同的方法名，不然可能会被覆盖 */
+  mixins: [ECharts1, ECharts2, ECharts3, ECharts4, ECharts5, ECharts6],
 
-    data() {
-      return {};
-    },
+  data() {
+    return {};
+  },
 
-    mounted() {
-      this.drawLine1();
-    }
-  };
+  mounted() {
+    this.drawLine1();
+  }
+};
 </script>
 
 <style scoped>

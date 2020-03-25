@@ -1,100 +1,98 @@
 .div1 {
-    /* width: 200px; */
-    /* height: 120px; */
-    line-height: 26px;
-    text-align: left;
-    background: #cccccc;
-    position: relative;
-    text-indent: 2em;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    overflow-x: auto;
-    overflow-y: auto;
-  }
-  .div1 {
-    border-left: 5px solid blue;
-  }
+  /* width: 200px; */
+  /* height: 120px; */
+  line-height: 26px;
+  text-align: left;
+  background: #cccccc;
+  position: relative;
+  text-indent: 2em;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+.div1 {
+  border-left: 5px solid blue;
+}
 
-  .div2 {
-    /* height: 120px; */
-    line-height: 29px;
-    text-align: left;
-    background: #ccc;
-    position: relative;
-    text-indent: 2em;
-    padding-left: 10px;
-    padding-right: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    overflow-x: auto;
-    overflow-y: auto;
-  }
-  .div2::before {
-    content: "";
-    width: 5px;
-    height: 120px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: green;
-  }
+.div2 {
+  /* height: 120px; */
+  line-height: 29px;
+  text-align: left;
+  background: #ccc;
+  position: relative;
+  text-indent: 2em;
+  padding-left: 10px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+.div2::before {
+  content: '';
+  width: 5px;
+  height: 120px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: green;
+}
 
-  .div3 {
-    line-height: 26px;
-    text-align: left;
-    background: #ccc;
-    position: relative;
-    text-indent: 2em;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    overflow-x: auto;
-    overflow-y: auto;
-  }
-  /* 内阴影 */
-  .div3 {
-    box-shadow: inset 5px 0px 0 0 red;
-  }
-  /* 外阴影  有些Chrome（比如：Chrome/70.0）版本上会底部1px兼容性问题，显示效果如下图*/
-  .div3 {
-    box-shadow: -5px 0px 0 0 purple;
-  }
+.div3 {
+  line-height: 26px;
+  text-align: left;
+  background: #ccc;
+  position: relative;
+  text-indent: 2em;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+/* 内阴影 */
+.div3 {
+  box-shadow: inset 5px 0px 0 0 red;
+}
+/* 外阴影  有些Chrome（比如：Chrome/70.0）版本上会底部1px兼容性问题，显示效果如下图*/
+.div3 {
+  box-shadow: -5px 0px 0 0 purple;
+}
 
-  .div4 {
-    line-height: 26px;
-    text-align: left;
-    background: #ccc;
-    position: relative;
-    text-indent: 2em;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    overflow-x: auto;
-    overflow-y: auto;
-  }
-  .div4 {
-    filter: drop-shadow(-5px 0 0 yellow);
-  }
+.div4 {
+  line-height: 26px;
+  text-align: left;
+  background: #ccc;
+  position: relative;
+  text-indent: 2em;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+.div4 {
+  filter: drop-shadow(-5px 0 0 yellow);
+}
 
-  .div5 {
-    line-height: 26px;
-    text-align: left;
-    background: #ccc;
-    position: relative;
-    text-indent: 2em;
-    padding-left: 10px;
-    padding-right: 5px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    overflow-x: auto;
-    overflow-y: auto;
-  }
-  .div5 {
-    background-image: linear-gradient(90deg, red 0px, red 5px, transparent 5px);
-  }
-
-
+.div5 {
+  line-height: 26px;
+  text-align: left;
+  background: #ccc;
+  position: relative;
+  text-indent: 2em;
+  padding-left: 10px;
+  padding-right: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+.div5 {
+  background-image: linear-gradient(90deg, red 0px, red 5px, transparent 5px);
+}

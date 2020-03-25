@@ -9,17 +9,17 @@
   font-size: 14px;
 }
 .infinite-list-item {
-    width: 100%;
-    background: #abc;
-    display: block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    list-style: none;
-    padding: 0 1rem;
-    box-sizing: border-box;
-    height: 40px;
-    line-height: 40px;
-    text-align:left;
-    border-bottom: 4px solid #e7e7e7;
-  }
+  width: 100%;
+  background: #abc;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  list-style: none;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  height: 40px;
+  line-height: 40px;
+  text-align: left;
+  border-bottom: 4px solid #e7e7e7;
+}

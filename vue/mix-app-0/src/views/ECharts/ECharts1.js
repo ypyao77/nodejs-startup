@@ -1,4 +1,4 @@
-import echarts from 'echarts';
+import echarts from 'echarts'
 
 export default {
   // mounted() {
@@ -6,7 +6,7 @@ export default {
   // },
   methods: {
     drawLine1() {
-      let myChart = echarts.init(document.getElementById('myChart1'));
+      let myChart = echarts.init(document.getElementById('myChart1'))
       myChart.setOption({
         title: { text: 'vue中引入ECharts1', x: 'center', y: 'bottom' },
         tooltip: {},
@@ -14,7 +14,20 @@ export default {
           data: ['销量']
         },
         xAxis: {
-          data: ['衬衫', '羊毛衫', '雪纺衫', '裤子', '高跟鞋', '袜子', '牛子裤', '大衣', '靴子', 'T恤', '卫衣', '羽绒服']
+          data: [
+            '衬衫',
+            '羊毛衫',
+            '雪纺衫',
+            '裤子',
+            '高跟鞋',
+            '袜子',
+            '牛子裤',
+            '大衣',
+            '靴子',
+            'T恤',
+            '卫衣',
+            '羽绒服'
+          ]
         },
         yAxis: {},
         series: [
@@ -24,7 +37,7 @@ export default {
             data: [5, 20, 36, 10, 10, 20, 21, 32, 17, 13, 27, 31]
           }
         ]
-      });
+      })
     }
   }
-};
+}
