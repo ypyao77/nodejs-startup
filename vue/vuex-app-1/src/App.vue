@@ -4,6 +4,7 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/board1">Board1</router-link> |
       <router-link to="/board2">Board2</router-link> |
+      <router-link to="/component">Component</router-link> |
 
       <label for="r1"><input type="checkbox" v-model="usecache" id="r1" /> 使用缓存：{{usecache}} </label>
     </div>

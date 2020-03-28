@@ -1,6 +1,6 @@
 <template>
   <div class="board1">
-    <h1>This is a board1 page</h1>
+    <h1>This is a BOARD1 page</h1>
     <input />
     <div> count: {{ count }} </div>
     <div> doneTodosCount: {{ doneTodosCount }} </div>
