@@ -1,6 +1,6 @@
 async function testAsync() {
-    return "hello async";
+  return 'hello async'
 }
 
-const result = testAsync();
-console.log(result);
+const result = testAsync()
+console.log(result)

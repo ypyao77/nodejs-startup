@@ -8,10 +8,9 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms))
 }
 
-console.log("1....")
+console.log('1....')
 test()
-console.log("2....")
-
+console.log('2....')
 
 // var coroutine = require("coroutine");
 

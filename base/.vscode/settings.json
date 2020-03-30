@@ -1,0 +1,40 @@
+{
+  "editor.formatOnSave": true,
+
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
+
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      "wrap_line_length": 1200,
+      "wrap_attributes": "auto",
+      "end_with_newline": false
+    },
+    "prettyhtml": {
+      "printWidth": 1200,
+      "semi": false,
+      "singleQuote": false,
+      "wrapAttributes": false,
+      "sortAttributes": false,
+      "proseWrap": "preserve",
+      "useTabs": true
+    },
+    "prettier": {
+      "singleQuote": true,
+      "semi": false,
+      "eslintIntegration": true
+    }
+  },
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier-eslint.eslintIntegration": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  // "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+  // "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+  // "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+  // "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+  "vetur.format.defaultFormatter.js": "vscode-typescript",
+  "editor.tabSize": 2
+}
